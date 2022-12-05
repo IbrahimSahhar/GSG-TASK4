@@ -1,0 +1,204 @@
+/* Start Global Rules  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+/* Start Container */
+
+.container {
+    width: 80%;
+    height: calc(100vh-15vh);
+    display: block;
+    margin: 20px auto;
+}
+
+
+/* End Container */
+
+
+/* Media  Query */
+
+
+/* Large Screen */
+
+@media (min-width :992px) {
+    .container {
+        width: 70%;
+    }
+    header h1 {
+        font-size: 38px;
+    }
+}
+
+
+/* Medium Screen */
+
+@media (max-width :992px) {
+    .container {
+        width: 100%;
+    }
+    header h1 {
+        font-size: 31px;
+    }
+}
+
+
+/* Small Screen */
+
+@media (max-width :767px) {
+    .container {
+        width: 100%;
+    }
+    header h1 {
+        font-size: 23px;
+    }
+}
+
+
+/* End Global Rules  */
+
+
+/* Start Header */
+
+header {
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(0, 162, 255, 0.911);
+    overflow: hidden;
+}
+
+header h1 {
+    text-align: center;
+    line-height: 15vh;
+    color: white;
+}
+
+
+/* End Header */
+
+
+/* Start Main Content */
+
+.container main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 135px 20px;
+}
+
+.container main .paint {
+    width: 50%;
+}
+
+.container main .paint .paintMe {
+    display: block;
+    width: 220px;
+    height: 220px;
+    margin: auto;
+    background-color: rebeccapurple;
+    text-align: center;
+    line-height: 220px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+@media (max-width :767px) {
+    .container main {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    .container main .paint {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .container main .paint .paintMe {
+        margin: 0 auto;
+    }
+}
+
+.container main .color {
+    display: block;
+    width: 80%;
+    height: 180px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.container main .color button,
+.container main .color input {
+    width: 60%;
+    padding: 10px 10px;
+}
+
+@media (max-width :992px) {
+    .container main .color button,
+    .container main .color input {
+        width: 70%;
+    }
+}
+
+.container main .color button {
+    margin-bottom: 20px;
+    color: rgba(25, 0, 255, 0.616);
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.container main .color button:hover {
+    background-color: rgba(0, 162, 255, 0.911);
+    outline: none;
+    border-color: transparent;
+    color: white;
+}
+
+.container main .color span {
+    display: block;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.container main .color p {
+    margin-bottom: 20px;
+    color: darkgreen;
+}
+
+.container main .color input {
+    color: darkgreen;
+    font-size: 15px;
+}
+
+.container main .color input:focus {
+    outline: none;
+    outline: 2px solid rgba(0, 247, 255, 0.301);
+}
+
+@media (max-width :767px) {
+    .container main .color {
+        width: 100%;
+    }
+}
+
+
+/* End Main Content */
